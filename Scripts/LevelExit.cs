@@ -20,8 +20,8 @@ public class LevelExit : MonoBehaviour
    
    IEnumerator LoadNextLevel()
    {
-       AudioSource.PlayClipAtPoint(levelExitSFX, Camera.main.transform.position);
-       levelExitEffect.Play();
+      // AudioSource.PlayClipAtPoint(levelExitSFX, Camera.main.transform.position);
+      // levelExitEffect.Play();
        
        yield return new WaitForSecondsRealtime(levelLoadDelay);
        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -32,7 +32,7 @@ public class LevelExit : MonoBehaviour
           nextSceneIndex = 0; 
        }
 
-       FindObjectOfType<ScenePersist>().ResetScenePersist();
+       //FindObjectOfType<ScenePersist>().ResetScenePersist();
        SceneManager.LoadScene(nextSceneIndex);
    }
        
