@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         }
 
         FlipSprite();
-        //StartCoroutine(Die());
+        StartCoroutine(Die());
     }
 
     // void OnFire(InputValue value)
@@ -88,20 +88,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // IEnumerator Die() 
-    // {
-    //  //if(myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
-    //  {
-    //   isActive = false; 
-    //   AudioSource.PlayClipAtPoint(deathSoundSFX, Camera.main.transform.position);
-    //   rb.velocity = deathKick;  
-    //   deathEffect.Play();
-    //   myAnimator.SetTrigger("Dead"); 
+    IEnumerator Die() 
+    {
+        if(myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")))
+        {
+            myAnimator.SetBool("IsRunning", false);
+            myAnimator.SetTrigger("Dead"); 
+            isActive = false; 
+            // AudioSource.PlayClipAtPoint(deathSoundSFX, Camera.main.transform.position);
+            //   rb.velocity = deathKick;  
+            //   deathEffect.Play();
+            
 
-    //   yield return new WaitForSecondsRealtime(1);
+            yield return new WaitForSecondsRealtime(1);
 
-    //   FindObjectOfType<GameSessions>().ProcessPlayerDeath();
-    //  }
+            //   FindObjectOfType<GameSessions>().ProcessPlayerDeath();
+        }
 
-    // }
+    }
 }

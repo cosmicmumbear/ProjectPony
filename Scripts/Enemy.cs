@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float moveSpeed =1f;
+    [SerializeField] float moveSpeed = 1f;
     Rigidbody2D myRigidbody;
 
     void Start()
@@ -15,17 +15,17 @@ public class Enemy : MonoBehaviour
    
     void Update()
     {
-        myRigidbody.velocity=new Vector2 (moveSpeed,0);
+        myRigidbody.velocity = new Vector2 (-moveSpeed,0);
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        moveSpeed = -moveSpeed;
+        //moveSpeed = -moveSpeed;
         FlipEnemyFacing();
     }
     
     void FlipEnemyFacing()
     {
-        transform.localScale = new Vector2 ((Mathf.Sign(myRigidbody.velocity.x)), 1f);
+        transform.localScale = new Vector2 ((Mathf.Sign(-myRigidbody.velocity.x)), 1f);
     }
 }
