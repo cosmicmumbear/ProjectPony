@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     Vector2 rawInput;
     bool isJumping;
     Rigidbody2D rb;
+    Animator myAnimator;
 
 
     const string platformLayer = "Platform";
@@ -23,12 +24,16 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
     {
         //Move the player
         rb.velocity = new Vector2(rawInput.x * moveSpeed, rb.velocity.y);
+
+        bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
+        myAnimator.SetBool("IsRunning",playerHasHorizontalSpeed);
 
         //Make the player jump
         if (isJumping)
