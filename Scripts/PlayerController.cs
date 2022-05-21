@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
         if(playerHasHorizontalSpeed)
         {
-            transform.localScale = new Vector2 (Mathf.Sign(rb.velocity.x), 1f);
+            transform.localScale = new Vector2 (Mathf.Sign(-rb.velocity.x), 1f);
         }
     }
 
