@@ -3496,39 +3496,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1974945633 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4253297328530706518, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
-  m_PrefabInstance: {fileID: 4253297329257813815}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1974945641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974945633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5c7b62f81adf2643a65e50f19434e8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!70 &1974945642
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974945633}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0361619, y: -0.06328344}
-  m_Size: {x: 0.7748308, y: 0.7748308}
-  m_Direction: 0
 --- !u!1 &2142887703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,34 +3580,6 @@ PrefabInstance:
     - target: {fileID: 4253297328530706518, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4253297328530706518, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4253297328530706527, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 1e9f9da79dc32294189a383dd6137eb7, type: 2}
-    - target: {fileID: 4253297329431871019, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e43a193245d3c8048af499263a433e6c, type: 3}
-    - target: {fileID: 4253297329431871019, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4253297329431871019, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4253297329431871019, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4253297329431871019, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
@@ -3832,7 +3771,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5189371, y: -0.4540702}
+  m_Offset: {x: -0.5189371, y: -0.78183377}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3843,7 +3782,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.082323074, y: 1.0923989}
+  m_Size: {x: 0.082323074, y: 0.43687177}
   m_EdgeRadius: 0
 --- !u!70 &6537963690719288486
 CapsuleCollider2D:
@@ -3858,8 +3797,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.3333334, y: 1.3333334}
+  m_Offset: {x: 0.029264927, y: -0.02341181}
+  m_Size: {x: 1.6025686, y: 1.6025686}
   m_Direction: 0
 --- !u!212 &6537963690719288487
 SpriteRenderer:
@@ -3935,7 +3874,7 @@ Animator:
   m_GameObject: {fileID: 6537963690719288484}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1ba3f9e3b639c7a46b9ef92ae0d2709d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7b0b66b520c666e4e8b31c8484f7d5b6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

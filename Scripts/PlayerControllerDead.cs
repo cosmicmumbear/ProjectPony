@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerController : MonoBehaviour
+public class PlayerControllerDead : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpForce = 5f;
@@ -54,7 +53,7 @@ public class PlayerController : MonoBehaviour
         }
 
         FlipSprite();
-        StartCoroutine(Die());
+       // StartCoroutine(Die());
     }
 
     // void OnFire(InputValue value)
@@ -89,23 +88,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator Die() 
-    {
-        if(myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")))
-        {
-            myAnimator.SetBool("IsRunning", false);
-            myAnimator.SetTrigger("Dead"); 
-            isActive = false; 
-            // AudioSource.PlayClipAtPoint(deathSoundSFX, Camera.main.transform.position);
-            //   rb.velocity = deathKick;  
-            //   deathEffect.Play();
+    // IEnumerator Die() 
+    // {
+    //     if(myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")))
+    //     {
+    //         myAnimator.SetBool("IsRunning", false);
+    //         myAnimator.SetTrigger("Dead"); 
+    //         isActive = false; 
+    //         // AudioSource.PlayClipAtPoint(deathSoundSFX, Camera.main.transform.position);
+    //         //   rb.velocity = deathKick;  
+    //         //   deathEffect.Play();
             
 
-            yield return new WaitForSecondsRealtime(1);
+    //         yield return new WaitForSecondsRealtime(1);
 
-            SceneManager.LoadScene(4);
-            //   FindObjectOfType<GameSessions>().ProcessPlayerDeath();
-        }
+    //         //   FindObjectOfType<GameSessions>().ProcessPlayerDeath();
+    //     }
 
-    }
+    // }
 }
