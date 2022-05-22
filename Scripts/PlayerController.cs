@@ -97,13 +97,13 @@ public class PlayerController : MonoBehaviour
             myAnimator.SetTrigger("Dead"); 
             isActive = false; 
             // AudioSource.PlayClipAtPoint(deathSoundSFX, Camera.main.transform.position);
-            //   rb.velocity = deathKick;  
+            rb.velocity = deathKick;  
             //   deathEffect.Play();
             
 
             yield return new WaitForSecondsRealtime(1);
 
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(3);
             //   FindObjectOfType<GameSessions>().ProcessPlayerDeath();
         }
 
