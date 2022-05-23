@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class Canvas : MonoBehaviour
+public class GameSessions : MonoBehaviour
 {
     int score = 0;
     float timer = 60;
@@ -17,8 +18,15 @@ public class Canvas : MonoBehaviour
 
     void Update()
     {           
-        timer -= Time.deltaTime;
-        timerText.text = Mathf.FloorToInt(timer).ToString();
+       if(timer > 1)
+       {
+           timer -= Time.deltaTime;
+           timerText.text = Mathf.FloorToInt(timer).ToString();
+       }
+       else
+       {
+           SceneManager.LoadScene(4);
+       }
     }
       
     public void AddToScore(int pointsToAdd)
