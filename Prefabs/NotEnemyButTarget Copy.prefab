@@ -9,27 +9,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.33285865
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.876738
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.9433962
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662361, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 182542230127662362, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 182542230127662363, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Name
-      value: NotEnemyButTarget
+      value: NotEnemyButTarget Copy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662364, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_RootOrder
@@ -37,11 +33,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662364, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5299363
+      value: -5.48
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662364, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5035613
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662364, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -99,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445718b8bb5da04468ab543e8887ff71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 0
   runAwaySpeed: 3
   changeToZombieSFX: {fileID: 0}
-  changeToZombieScoreValue: 100
+  changeToZombieScoreValue: 400

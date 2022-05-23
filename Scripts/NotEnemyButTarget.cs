@@ -10,7 +10,7 @@ public class NotEnemyButTarget : MonoBehaviour
     [SerializeField] int changeToZombieScoreValue = 100;
     Rigidbody2D myRigidbody;
     bool wasChangedToZombie = false;
-    float runAwayDistance = 1f;
+    float runAwayDistance = 4.5f;
     GameObject player;
 
     void Awake()
@@ -22,7 +22,7 @@ public class NotEnemyButTarget : MonoBehaviour
    
     void Update()
     {
-        if((transform.position-player.transform.position).magnitude > 5)
+        if((transform.position-player.transform.position).magnitude > runAwayDistance)
         {
             myRigidbody.velocity = new Vector2 (-moveSpeed,0);
         }
