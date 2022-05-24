@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662363, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Name
-      value: NotEnemyButTarget Copy (1)
+      value: NotEnemyButTarget Copy
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662364, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_RootOrder
@@ -83,7 +83,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 182542230127662363, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
   m_PrefabInstance: {fileID: 746531608535919775}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8271838267619372197
+--- !u!4 &636331058864208259 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 182542230127662364, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
+  m_PrefabInstance: {fileID: 746531608535919775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &824285630024566274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,6 +96,20 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636331058864208260}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5848507b1cf4b184f80a7d7e89fbf951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldenPonyPrefab: {fileID: 636331058864208260}
+  instPos: {fileID: 636331058864208259}
+--- !u!114 &8271838267619372197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636331058864208260}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 445718b8bb5da04468ab543e8887ff71, type: 3}
   m_Name: 

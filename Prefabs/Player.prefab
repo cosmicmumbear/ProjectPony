@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1974945642}
   - component: {fileID: 8050670099647268505}
   - component: {fileID: 7048956016273722801}
+  - component: {fileID: -8328978692966208977}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -236,6 +237,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-8328978692966208977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4253297328530706518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5848507b1cf4b184f80a7d7e89fbf951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldenPonyPrefab: {fileID: 0}
+  instPos: {fileID: 0}
 --- !u!1 &4253297329264242479
 GameObject:
   m_ObjectHideFlags: 0
