@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class NotEnemyButTargetL : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 0.1f;
-    [SerializeField] float runAwaySpeed = 0.9f;
+    [SerializeField] float moveSpeed = 2f;
+    [SerializeField] float runAwaySpeed = 3f;
     [SerializeField] AudioClip changeToZombieSFX;
     [SerializeField] int changeToZombieScoreValue = 100;
     [SerializeField] Transform target;
     Rigidbody2D myRigidbody;
     bool wasChangedToZombie = false;
-    float runAwayDistance = 4.5f;
+    float runAwayDistance = 4f;
     GameObject player;
     
 
@@ -29,13 +29,13 @@ public class NotEnemyButTargetL : MonoBehaviour
         
         if((transform.position - player.transform.position).magnitude > runAwayDistance)
         {
-            transform.LookAt(target);
-            transform.localScale = new Vector2 ((Mathf.Sign(player.GetComponent<Rigidbody2D>().velocity.x)), 1f);
+            //transform.LookAt(target);
+            //transform.localScale = new Vector2 ((Mathf.Sign(player.GetComponent<Rigidbody2D>().velocity.x)), 1f);
             myRigidbody.velocity = new Vector2 (moveSpeed,0);
         }
         else
         {
-            transform.localScale = new Vector2 ((Mathf.Sign(player.GetComponent<Rigidbody2D>().velocity.x)), 1f);
+            transform.localScale = new Vector2 ((Mathf.Sign(-player.GetComponent<Rigidbody2D>().velocity.x)), 1f);
             myRigidbody.velocity = new Vector2 (runAwaySpeed,0);
         }
 
@@ -49,7 +49,7 @@ public class NotEnemyButTargetL : MonoBehaviour
     
     void FlipEnemyFacing()
     {
-        transform.localScale = new Vector2 ((Mathf.Sign(myRigidbody.velocity.x)), 1f);
+        transform.localScale = new Vector2 ((Mathf.Sign(-myRigidbody.velocity.x)), 1f);
     }
   
 

@@ -29,13 +29,13 @@ public class NotEnemyButTargetP : MonoBehaviour
         
         if((transform.position - player.transform.position).magnitude > runAwayDistance)
         {
-            transform.LookAt(target);
-            transform.localScale = new Vector2 ((Mathf.Sign(player.GetComponent<Rigidbody2D>().velocity.x)), 1f);
+            //transform.LookAt(target);
+            //transform.localScale = new Vector2 ((Mathf.Sign(player.GetComponent<Rigidbody2D>().velocity.x)), 1f);
             myRigidbody.velocity = new Vector2 (-moveSpeed,0);
         }
         else
         {
-            transform.localScale = new Vector2 ((Mathf.Sign(player.GetComponent<Rigidbody2D>().velocity.x)), 1f);
+            transform.localScale = new Vector2 ((Mathf.Sign(-player.GetComponent<Rigidbody2D>().velocity.x)), 1f);
             myRigidbody.velocity = new Vector2 (runAwaySpeed,0);
         }
 
