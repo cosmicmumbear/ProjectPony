@@ -13,8 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Vector2 deathKick;
     [SerializeField] AudioClip deathSoundSFX;
     [SerializeField] ParticleSystem deathEffect;
-    // [SerializeField] GameObject bullet;
-    // [SerializeField] Transform gun;
+
 
     public bool isActive = true;
 
@@ -57,12 +56,6 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(Die());
     }
 
-    // void OnFire(InputValue value)
-    // {
-    //     if(!isAlive) {return;}
-    //     Instantiate(bullet, gun.position, transform.rotation);
-    // }
-
     //Used by the input system 
     void OnMove(InputValue value)
     {
@@ -104,7 +97,6 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSecondsRealtime(1);
 
             SceneManager.LoadScene(3);
-            //   FindObjectOfType<GameSessions>().ProcessPlayerDeath();
         }
 
     }

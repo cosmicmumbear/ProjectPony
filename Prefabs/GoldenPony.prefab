@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7109339457876940951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0476022
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.72236514
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208259, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208260, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_Name
+      value: GoldenPony
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208263, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_Color.b
+      value: 0.1345674
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208263, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9035922
+      objectReference: {fileID: 0}
+    - target: {fileID: 636331058864208263, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: m_Color.r
+      value: 0.990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271838267619372197, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+      propertyPath: moveSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8271838267619372197, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+--- !u!1 &7673501734518022419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636331058864208260, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
+  m_PrefabInstance: {fileID: 7109339457876940951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2412607927103515283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673501734518022419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccdb7541c9b5cd46a653d1760588d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  runAwaySpeed: 0
+  changeToZombieSFX: {fileID: 0}
+  respawnTime: 2
+  changeToZombieScoreValue: 400
+  changeToZombieEffect: {fileID: 0}
+  isActive: 1
