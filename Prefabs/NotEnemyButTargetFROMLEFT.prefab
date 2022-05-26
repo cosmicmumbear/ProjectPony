@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -103,4 +107,3 @@ MonoBehaviour:
   runAwaySpeed: 3
   changeToZombieSFX: {fileID: 0}
   changeToZombieScoreValue: 100
-  target: {fileID: 0}
