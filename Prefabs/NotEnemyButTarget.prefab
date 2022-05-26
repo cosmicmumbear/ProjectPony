@@ -103,3 +103,4 @@ MonoBehaviour:
   runAwaySpeed: 3
   changeToZombieSFX: {fileID: 0}
   changeToZombieScoreValue: 100
+  target: {fileID: 7838680729535480558, guid: 2f2b20f9b0150d741998ba8e1dcdf5f3, type: 3}

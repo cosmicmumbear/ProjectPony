@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 095f32184107fb84b86bfdff79c83e83, type: 3}
-  m_Name: Wave
+  m_Name: Golden
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 636331058864208260, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
-  - {fileID: 636331058864208260, guid: 90c4f4ff7639403448e32d1b0e612d92, type: 3}
-  pathPrefab: {fileID: 6157241861792543123, guid: cf109177510011a4ebda5bf53bea5013, type: 3}
+  - {fileID: 636331058864208260, guid: f6b1ec952d3432d49bf31652eb18d5a6, type: 3}
+  pathPrefab: {fileID: 6157241861792543123, guid: 734202af0635f384c94a52b0f528948e, type: 3}
   timeBetweenEnemySpawns: 0.6
   spawnTimeVariance: 0.1
   minimumSpawnTime: 0.1
