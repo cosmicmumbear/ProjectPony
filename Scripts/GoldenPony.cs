@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class GoldenPony : MonoBehaviour
     [SerializeField] AudioClip changeToZombieSFX;
     [SerializeField] int changeToZombieScoreValue = 400;
     [SerializeField] ParticleSystem changeToZombieEffect;
+    [SerializeField] ParticleSystem dieEffect;
 
     
     public bool isActive = true;
@@ -43,11 +45,13 @@ public class GoldenPony : MonoBehaviour
         myAnimator.SetBool("IsRunning", false);
         myAnimator.SetTrigger("Dead"); 
         
-        //AudioSource.PlayClipAtPoint(changeToZombieSFX, Camera.main.transform.position);
-        //changeToZombieEffect.Play();
+        AudioSource.PlayClipAtPoint(changeToZombieSFX, Camera.main.transform.position);
+        dieEffect.Play();
 
         yield return new WaitForSecondsRealtime(1);
 
+
+        changeToZombieEffect.Play();
         Destroy(gameObject);
     }
 

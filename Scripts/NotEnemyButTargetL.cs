@@ -52,10 +52,11 @@ public class NotEnemyButTargetL : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-       
+            
        if(other.tag == "Player" && !wasChangedToZombie)
        {
            wasChangedToZombie= true;
+           isActive = false;
            StartCoroutine(Die());
            FindObjectOfType<GameSessions>().AddToScore(changeToZombieScoreValue);
        } 
@@ -67,8 +68,8 @@ public class NotEnemyButTargetL : MonoBehaviour
         myAnimator.SetBool("IsRunning", false);
         myAnimator.SetTrigger("Dead"); 
         
-        //AudioSource.PlayClipAtPoint(changeToZombieSFX, Camera.main.transform.position);
-        //changeToZombieEffect.Play();
+        AudioSource.PlayClipAtPoint(changeToZombieSFX, Camera.main.transform.position);
+        changeToZombieEffect.Play();
 
         yield return new WaitForSecondsRealtime(1);
         

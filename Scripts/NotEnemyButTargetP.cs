@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -68,8 +69,8 @@ public class NotEnemyButTargetP : MonoBehaviour
         myAnimator.SetBool("IsRunning", false);
         myAnimator.SetTrigger("Dead"); 
         
-        //AudioSource.PlayClipAtPoint(changeToZombieSFX, Camera.main.transform.position);
-        //changeToZombieEffect.Play();
+        AudioSource.PlayClipAtPoint(changeToZombieSFX, Camera.main.transform.position);
+        changeToZombieEffect.Play();
 
         yield return new WaitForSecondsRealtime(1);
 
