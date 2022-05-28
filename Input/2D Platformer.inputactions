@@ -93,6 +93,17 @@
                 },
                 {
                     "name": "",
+                    "id": "12824332-50d0-4ffd-8ece-c0c79ca01057",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "031f859d-0b80-474c-bb4c-4a524b9274fb",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
@@ -120,6 +131,28 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0b96c2fd-ada7-472f-8673-9545e163fe66",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "661448eb-3cf0-41a8-b2ec-2dc2d805c5ce",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false

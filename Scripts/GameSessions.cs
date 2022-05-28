@@ -11,6 +11,19 @@ public class GameSessions : MonoBehaviour
     [SerializeField] Text timerText;
     [SerializeField] Text scoreText;
    
+    void Awake()
+    {
+       int numGameSessions = FindObjectsOfType<GameSessions>().Length;
+       if(numGameSessions > 1)
+       {
+           Destroy(gameObject);
+       } 
+       else 
+       {
+           DontDestroyOnLoad(gameObject);
+       }
+    }
+    
     void Start() 
     {
        scoreText.text = score.ToString();
