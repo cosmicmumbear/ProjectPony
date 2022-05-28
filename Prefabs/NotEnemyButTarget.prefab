@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 182542230127662358, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7b0b66b520c666e4e8b31c8484f7d5b6, type: 2}
     - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -25,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662362, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662363, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Name
@@ -106,8 +110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  runAwaySpeed: 2.9
-  changeToZombieSFX: {fileID: 8300000, guid: e961724e834aa904fbcb26479aaace2b, type: 3}
+  runAwaySpeed: 3.7
+  runAwayDistance: 2.5
+  changeToZombieSFX: {fileID: 8300000, guid: 2527c042544dfd34ca21c867b68fc6f3, type: 3}
   changeToZombieScoreValue: 100
   changeToZombieEffect: {fileID: 7189351207491261545}
   isActive: 1

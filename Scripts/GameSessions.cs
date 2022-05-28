@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameSessions : MonoBehaviour
 {
     int score = 0;
-    float timer = 60;
+    float timer = 40;
     [SerializeField] Text timerText;
     [SerializeField] Text scoreText;
    

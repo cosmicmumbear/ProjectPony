@@ -12,14 +12,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: 7b0b66b520c666e4e8b31c8484f7d5b6, type: 2}
     - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 2029106019785841896, guid: 60aa6dedbb940ab459e969e83872e392, type: 3}
-    - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -36,28 +28,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662362, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: m_Size.x
-      value: 0.06351745
-      objectReference: {fileID: 0}
-    - target: {fileID: 182542230127662362, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 182542230127662362, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.5122455
-      objectReference: {fileID: 0}
-    - target: {fileID: 182542230127662362, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.3333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 182542230127662362, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.3333334
-      objectReference: {fileID: 0}
     - target: {fileID: 182542230127662363, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Name
-      value: NotEnemyButTargetFROMLEFT
+      value: NotEnemyButTarget 1
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662364, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_RootOrder
@@ -103,19 +79,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5748091534489246379, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: runAwaySpeed
-      value: 2.9
+    - target: {fileID: 182542230127662366, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5748091534489246379, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: changeToZombieSFX
-      value: 
-      objectReference: {fileID: 8300000, guid: 2527c042544dfd34ca21c867b68fc6f3, type: 3}
-    - target: {fileID: 5748091534489246379, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: changeToZombieEffect
-      value: 
-      objectReference: {fileID: 677087961224853454}
     m_RemovedComponents:
+    - {fileID: 5748091534489246379, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
     - {fileID: 182542230127662359, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
 --- !u!1 &636331058864208260 stripped
@@ -128,7 +97,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 182542230127662364, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
   m_PrefabInstance: {fileID: 746531608535919775}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4709068387424838239
+--- !u!114 &8271838267619372197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,17 +106,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 636331058864208260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c1c95fcb2fc16b4fae43f1836512bb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 445718b8bb5da04468ab543e8887ff71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  runAwaySpeed: 3
-  runAwayDistance: 4
+  moveSpeed: 1
+  runAwaySpeed: 2.5
+  runAwayDistance: 3
   changeToZombieSFX: {fileID: 8300000, guid: e961724e834aa904fbcb26479aaace2b, type: 3}
   changeToZombieScoreValue: 100
-  changeToZombieEffect: {fileID: 5427206237435784822, guid: 3dd951ded509c7a42a1d928b6ed54ba3, type: 3}
+  changeToZombieEffect: {fileID: 7189351207491261545}
   isActive: 1
---- !u!1001 &4770491473527626168
+--- !u!1001 &2924238604994492959
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -204,8 +173,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd951ded509c7a42a1d928b6ed54ba3, type: 3}
---- !u!198 &677087961224853454 stripped
+--- !u!198 &7189351207491261545 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5427206237435784822, guid: 3dd951ded509c7a42a1d928b6ed54ba3, type: 3}
-  m_PrefabInstance: {fileID: 4770491473527626168}
+  m_PrefabInstance: {fileID: 2924238604994492959}
   m_PrefabAsset: {fileID: 0}

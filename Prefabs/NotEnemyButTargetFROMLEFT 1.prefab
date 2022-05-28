@@ -16,10 +16,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 2029106019785841896, guid: 60aa6dedbb940ab459e969e83872e392, type: 3}
-    - target: {fileID: 182542230127662360, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -47,17 +43,9 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.5122455
       objectReference: {fileID: 0}
-    - target: {fileID: 182542230127662362, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.3333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 182542230127662362, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.3333334
-      objectReference: {fileID: 0}
     - target: {fileID: 182542230127662363, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_Name
-      value: NotEnemyButTargetFROMLEFT
+      value: NotEnemyButTargetFROMLEFT 1
       objectReference: {fileID: 0}
     - target: {fileID: 182542230127662364, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
       propertyPath: m_RootOrder
@@ -140,10 +128,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c1c95fcb2fc16b4fae43f1836512bb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  runAwaySpeed: 3
-  runAwayDistance: 4
-  changeToZombieSFX: {fileID: 8300000, guid: e961724e834aa904fbcb26479aaace2b, type: 3}
+  moveSpeed: 1.5
+  runAwaySpeed: 2
+  runAwayDistance: 2.6
+  changeToZombieSFX: {fileID: 8300000, guid: 2527c042544dfd34ca21c867b68fc6f3, type: 3}
   changeToZombieScoreValue: 100
   changeToZombieEffect: {fileID: 5427206237435784822, guid: 3dd951ded509c7a42a1d928b6ed54ba3, type: 3}
   isActive: 1

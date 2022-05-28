@@ -6,6 +6,7 @@ public class NotEnemyButTargetL : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 2f;
     [SerializeField] float runAwaySpeed = 3f;
+    [SerializeField] float runAwayDistance = 2.5f;
     [SerializeField] AudioClip changeToZombieSFX;
     [SerializeField] int changeToZombieScoreValue = 100;
     [SerializeField] ParticleSystem changeToZombieEffect;
@@ -13,8 +14,7 @@ public class NotEnemyButTargetL : MonoBehaviour
     
     public bool isActive = true;
     bool wasChangedToZombie = false;
-    float runAwayDistance = 4f;
-
+   
     GameObject player;
     Animator myAnimator;
     Rigidbody2D myRigidbody;
