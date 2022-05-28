@@ -77,5 +77,10 @@ public class NotEnemyButTargetP : MonoBehaviour
         Destroy(gameObject);
     }
 
+          private void OnBecameInvisible() 
+      {
+       Destroy(gameObject);
+      }
+
        
 }

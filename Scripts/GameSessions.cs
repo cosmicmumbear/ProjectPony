@@ -10,6 +10,8 @@ public class GameSessions : MonoBehaviour
     float timer = 40;
     [SerializeField] Text timerText;
     [SerializeField] Text scoreText;
+
+    [SerializeField] GameOverHandler gameOverHandler;
    
     void Awake()
     {
@@ -38,7 +40,7 @@ public class GameSessions : MonoBehaviour
        }
        else
        {
-           SceneManager.LoadScene(4);
+           gameOverHandler.EndGame();
        }
     }
       
