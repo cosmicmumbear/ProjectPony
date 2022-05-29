@@ -58,7 +58,7 @@ public class NotEnemyButTargetL : MonoBehaviour
            wasChangedToZombie= true;
            isActive = false;
            StartCoroutine(Die());
-           FindObjectOfType<GameSessions>().AddToScore(changeToZombieScoreValue);
+           FindObjectOfType<ScoreUpdater>().AddToScore(changeToZombieScoreValue);
        } 
     }
 

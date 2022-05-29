@@ -2,33 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class GameSessions : MonoBehaviour
+public class ScoreUpdater: MonoBehaviour
 {
     int score = 0;
-    float timer = 40;
+    int hitScore = 0;
+    float timer = 60;
     [SerializeField] Text timerText;
     [SerializeField] Text scoreText;
-
-    [SerializeField] GameOverHandler gameOverHandler;
-   
-    void Awake()
-    {
-       int numGameSessions = FindObjectsOfType<GameSessions>().Length;
-       if(numGameSessions > 1)
-       {
-           Destroy(gameObject);
-       } 
-       else 
-       {
-           DontDestroyOnLoad(gameObject);
-       }
-    }
-    
+    [SerializeField] Text hitScoreText;
+  
+       
     void Start() 
     {
        scoreText.text = score.ToString();
+       hitScoreText.text = hitScore.ToString();
     }
 
     void Update()
@@ -40,7 +28,7 @@ public class GameSessions : MonoBehaviour
        }
        else
        {
-           gameOverHandler.EndGame();
+           timer = 0;
        }
     }
       
@@ -49,7 +37,10 @@ public class GameSessions : MonoBehaviour
         score += pointsToAdd;
         scoreText.text = score.ToString();
     }
-        
+
+    public void AddToHitScore(int hitPointsToAdd)
+    {
+        hitScore += hitPointsToAdd;
+        hitScoreText.text = hitScore.ToString();
+    }
 }
-
-

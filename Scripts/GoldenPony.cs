@@ -35,7 +35,7 @@ public class GoldenPony : MonoBehaviour
        {
            wasChangedToZombie= true;
            StartCoroutine(Die());
-           FindObjectOfType<GameSessions>().AddToScore(changeToZombieScoreValue);
+           FindObjectOfType<ScoreUpdater>().AddToScore(changeToZombieScoreValue);
        } 
     }
 
