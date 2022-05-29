@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeToZombieSFX: {fileID: 8300000, guid: 755deeed0c8018d4485480ab9a3f0322, type: 3}
-  changeToZombieScoreValue: 400
+  changeToZombieScoreValue: 1200
   changeToZombieEffect: {fileID: 5524227612688785287}
   dieEffect: {fileID: 102674891016670462}
   isActive: 1

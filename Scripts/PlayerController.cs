@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] AudioClip deathSoundSFX;
     [SerializeField] ParticleSystem deathEffect;
 
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
+
 
     public bool isActive = true;
 
@@ -56,20 +59,25 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(Die());
     }
 
-    //Used by the input system 
+    
     void OnMove(InputValue value)
     {
         if (!isActive) { return; }
         rawInput = value.Get<Vector2>();
     }
-
-    //Used by the input system
+    
     void OnJump(InputValue value)
     {
         if (!isActive) { return; }
         if (!feet.IsTouchingLayers(LayerMask.GetMask(platformLayer))) { return; }
 
         isJumping = true;
+    }
+
+        void OnFire(InputValue value)
+    {
+        if(!isActive) {return;}
+        Instantiate(bullet, gun.position, transform.rotation);
     }
 
         void  FlipSprite()

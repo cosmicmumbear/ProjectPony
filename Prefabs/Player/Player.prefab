@@ -34,6 +34,7 @@ Transform:
   m_LocalPosition: {x: -11.5781975, y: 4.6192636, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 5515537575390114756}
   - {fileID: 4253297329264242478}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,9 +73,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.06, y: -0.24}
   serializedVersion: 2
-  m_Radius: 0.45448178
+  m_Radius: 0.44
 --- !u!114 &4253297328530706512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +123,9 @@ MonoBehaviour:
   feet: {fileID: 4253297329264242477}
   deathKick: {x: 5, y: 5}
   deathSoundSFX: {fileID: 8300000, guid: 755deeed0c8018d4485480ab9a3f0322, type: 3}
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 5427206237435784822, guid: 3dd951ded509c7a42a1d928b6ed54ba3, type: 3}
+  bullet: {fileID: 4960438762180769870, guid: 0de3dd72e7aaa3f48a3a8241a788a4f5, type: 3}
+  gun: {fileID: 5515537575390114756}
   isActive: 1
 --- !u!95 &1974945639
 Animator:
@@ -239,7 +242,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4253297328530706513}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4253297329264242477
 BoxCollider2D:
@@ -248,7 +251,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4253297329264242479}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -267,3 +270,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6914544, y: 0.07177591}
   m_EdgeRadius: 0
+--- !u!1 &6027221930260508632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5515537575390114756}
+  m_Layer: 0
+  m_Name: gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5515537575390114756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027221930260508632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.411, y: 0.289, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4253297328530706513}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
