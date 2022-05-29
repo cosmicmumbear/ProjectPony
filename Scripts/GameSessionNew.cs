@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameSessionNew : MonoBehaviour
 {
-     [SerializeField] GameOverHandler gameOverHandler;   
-     float timer = 40;
+     //[SerializeField] GameOverHandler gameOverHandler;   
+     //float timer = 40;
         void Awake()
         {
         int numGameSessions = FindObjectsOfType<GameSessionNew>().Length;
@@ -20,18 +20,18 @@ public class GameSessionNew : MonoBehaviour
             }
         } 
 
-        void Update()
-        {           
-        if(timer > 1)
-            {
-                timer -= Time.deltaTime;
+        // void Update()
+        // {           
+        // if(timer > 1)
+        //     {
+        //         timer -= Time.deltaTime;
                 
-            }
-            else
-            {
-                gameOverHandler.EndGame();
-            }
-        } 
+        //     }
+        //     else
+        //     {
+        //         gameOverHandler.EndGame();
+        //     }
+        // } 
 }
 
 

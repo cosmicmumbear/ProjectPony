@@ -3810,7 +3810,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 0ceb3b7f07f8bff499799cb7cfa69fcd, type: 3}
   m_Color: {r: 0.90927887, g: 0.493058, b: 0.9433962, a: 0.61960787}
   m_FlipX: 0
@@ -3876,10 +3876,6 @@ PrefabInstance:
     - target: {fileID: 4285173617062837484, guid: edd3f436586f90e4c99e14d44e2307a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543754304964795297, guid: edd3f436586f90e4c99e14d44e2307a4, type: 3}
-      propertyPath: gameOverHandler
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edd3f436586f90e4c99e14d44e2307a4, type: 3}

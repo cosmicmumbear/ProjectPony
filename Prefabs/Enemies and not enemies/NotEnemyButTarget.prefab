@@ -83,6 +83,10 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6288226536717598137, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5748091534489246379, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
     - {fileID: 182542230127662359, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
@@ -95,6 +99,11 @@ GameObject:
 --- !u!4 &636331058864208259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 182542230127662364, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
+  m_PrefabInstance: {fileID: 746531608535919775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2367866498939211838 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3062567060345437345, guid: 10c1c3dccb52ada4ab3bfb919d7018cc, type: 3}
   m_PrefabInstance: {fileID: 746531608535919775}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &8271838267619372197
@@ -114,7 +123,7 @@ MonoBehaviour:
   runAwayDistance: 2.5
   changeToZombieSFX: {fileID: 8300000, guid: 2527c042544dfd34ca21c867b68fc6f3, type: 3}
   changeToZombieScoreValue: 100
-  changeToZombieEffect: {fileID: 7189351207491261545}
+  changeToZombieEffect: {fileID: 2367866498939211838}
   isActive: 1
 --- !u!1001 &2924238604994492959
 PrefabInstance:
@@ -173,8 +182,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd951ded509c7a42a1d928b6ed54ba3, type: 3}
---- !u!198 &7189351207491261545 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5427206237435784822, guid: 3dd951ded509c7a42a1d928b6ed54ba3, type: 3}
-  m_PrefabInstance: {fileID: 2924238604994492959}
-  m_PrefabAsset: {fileID: 0}

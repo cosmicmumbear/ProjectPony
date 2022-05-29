@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] float bulletSpeed = 20f;
     [SerializeField] int hitScore = 80;
     [SerializeField] ParticleSystem hitEffect;
+    [SerializeField] AudioClip hitSFX;
     Rigidbody2D myRigidbody;
     PlayerController player;
     float xSpeed;
@@ -25,11 +26,12 @@ public class Bullet : MonoBehaviour
 
    void OnTriggerEnter2D(Collider2D other)
     {
+       hitEffect.Play();
+       AudioSource.PlayClipAtPoint(hitSFX, Camera.main.transform.position);
        if(other.tag == "Enemy")
        {
            FindObjectOfType<ScoreUpdater>().AddToHitScore(hitScore);
        } 
-       hitEffect.Play();
        Destroy(gameObject);
     }
 

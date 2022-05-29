@@ -11,12 +11,15 @@ public class ScoreUpdater: MonoBehaviour
     [SerializeField] Text timerText;
     [SerializeField] Text scoreText;
     [SerializeField] Text hitScoreText;
+    
+    GameOverHandler gameOverHandler;
   
        
     void Start() 
     {
        scoreText.text = score.ToString();
        hitScoreText.text = hitScore.ToString();
+      // gameOverHandler = FindObjectOfType<GameOverHandler>();
     }
 
     void Update()
@@ -28,8 +31,10 @@ public class ScoreUpdater: MonoBehaviour
        }
        else
        {
-           timer = 0;
+           gameOverHandler = FindObjectOfType<GameOverHandler>();
+           gameOverHandler.EndGame();
        }
+
     }
       
     public void AddToScore(int pointsToAdd)
@@ -42,5 +47,15 @@ public class ScoreUpdater: MonoBehaviour
     {
         hitScore += hitPointsToAdd;
         hitScoreText.text = hitScore.ToString();
+    }
+
+    public int GetHitScore()
+    {
+        return hitScore;
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
 }
