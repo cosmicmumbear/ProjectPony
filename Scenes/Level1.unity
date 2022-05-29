@@ -3358,6 +3358,10 @@ PrefabInstance:
       propertyPath: bulletSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4728039625337271363, guid: 0de3dd72e7aaa3f48a3a8241a788a4f5, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4960438762180769870, guid: 0de3dd72e7aaa3f48a3a8241a788a4f5, type: 3}
       propertyPath: m_Name
       value: Bullet
@@ -3405,6 +3409,10 @@ PrefabInstance:
     - target: {fileID: 5341935064402885691, guid: 0de3dd72e7aaa3f48a3a8241a788a4f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700374098001251839, guid: 0de3dd72e7aaa3f48a3a8241a788a4f5, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0de3dd72e7aaa3f48a3a8241a788a4f5, type: 3}
@@ -3580,6 +3588,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2901914663883438524, guid: edd3f436586f90e4c99e14d44e2307a4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901914663883438524, guid: edd3f436586f90e4c99e14d44e2307a4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901914663883438524, guid: edd3f436586f90e4c99e14d44e2307a4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 408
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901914663883438524, guid: edd3f436586f90e4c99e14d44e2307a4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901914663883438525, guid: edd3f436586f90e4c99e14d44e2307a4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c9b00a2efa219d48ab8ce9533ec15f5, type: 3}
+    - target: {fileID: 4202694102763133838, guid: edd3f436586f90e4c99e14d44e2307a4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -80
+      objectReference: {fileID: 0}
     - target: {fileID: 4285173617062837475, guid: edd3f436586f90e4c99e14d44e2307a4, type: 3}
       propertyPath: m_Name
       value: GameSessionNew

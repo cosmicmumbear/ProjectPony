@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] float bulletSpeed = 20f;
     [SerializeField] int hitScore = 80;
+    [SerializeField] ParticleSystem hitEffect;
     Rigidbody2D myRigidbody;
     PlayerController player;
     float xSpeed;
@@ -28,6 +29,7 @@ public class Bullet : MonoBehaviour
        {
            FindObjectOfType<ScoreUpdater>().AddToHitScore(hitScore);
        } 
+       hitEffect.Play();
        Destroy(gameObject);
     }
 
