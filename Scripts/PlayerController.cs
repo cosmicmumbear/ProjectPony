@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Vector2 deathKick;
     [SerializeField] AudioClip deathSoundSFX;
     [SerializeField] ParticleSystem deathEffect;
+    [SerializeField] ParticleSystem bulletEffect;
+    [SerializeField] AudioClip bulletSFX;
 
     [SerializeField] GameObject bullet;
     [SerializeField] Transform gun;
@@ -77,6 +79,8 @@ public class PlayerController : MonoBehaviour
         void OnFire(InputValue value)
     {
         if(!isActive) {return;}
+        AudioSource.PlayClipAtPoint(bulletSFX, Camera.main.transform.position);
+        bulletEffect.Play();
         Instantiate(bullet, gun.position, transform.rotation);
     }
 

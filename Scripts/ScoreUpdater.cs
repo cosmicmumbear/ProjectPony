@@ -13,6 +13,7 @@ public class ScoreUpdater: MonoBehaviour
     [SerializeField] Text hitScoreText;
     
     GameOverHandler gameOverHandler;
+    Cutdown cutdown;
   
        
     void Start() 
@@ -28,9 +29,17 @@ public class ScoreUpdater: MonoBehaviour
        {
            timer -= Time.deltaTime;
            timerText.text = Mathf.FloorToInt(timer).ToString();
+       
+            if(timer < 4 )
+            {  
+               
+                cutdown = FindObjectOfType<Cutdown>();
+                cutdown.CutdownOn(timer);
+            }
        }
        else
        {
+           cutdown.CutdownOff();
            gameOverHandler = FindObjectOfType<GameOverHandler>();
            gameOverHandler.EndGame();
        }

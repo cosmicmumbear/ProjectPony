@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] int hitScore = 80;
     [SerializeField] ParticleSystem hitEffect;
     [SerializeField] AudioClip hitSFX;
+    
     Rigidbody2D myRigidbody;
     PlayerController player;
     float xSpeed;
