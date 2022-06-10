@@ -1,0 +1,10 @@
+*.log
+Anim/
+Audio/
+ImportedAssets/
+Input/
+Materials/
+Prefabs/
+Scenes/
+Sprites/
+Tilemap/
